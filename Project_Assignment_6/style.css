@@ -3,17 +3,10 @@
 	    margin: 0;
 	    padding: 0;
 	}
-/*	body {
 
-    background: #f3f3f3; 
-	    color: #595959 ;
-	    font-family: Arial,Helvetica,sans-serif;
-	    font-size: 12px;
-	    line-height: 17px;
-    border: 3px solid #9E2B05;
-    box-shadow: 2px 2px 10px #40332F;
-  border-radius: 6px;
-}*/
+#container{
+  background: #f6f3f3; 
+}
 html, body, form, fieldset, legend, h1, ul {
 	margin: 0;
 	padding: 0;
@@ -26,6 +19,7 @@ html, body, form, fieldset, legend, h1, ul {
 	vertical-align: baseline;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: 300;
+  background: #f6f3f3; 
 }
 	}
 	img {
@@ -39,25 +33,16 @@ html, body, form, fieldset, legend, h1, ul {
 	    padding-left: 20px;
 	    padding-right: 20px;
 	}
-/* main section */
-/*#main {
-    background-color:#d8cfb1; 
-    background: linear-gradient(#ffffff,#BF8E7E);
-    padding:20px 5;
-}*/
+
 #content {
     overflow: hidden;
 }
 #content {
-    border: 2px solid #595959; /* #E9E9E9;*/
+    border: 2px solid #595959; 
     float: left;
     margin: 0 2%;
-    width: 100%; /*63%*/
-}
-#content .link{
-  font-size: 18px;
-  font-family: 'Conv_azoft-sans-bold-italic',Helvetica, Arial, sans-serif;
-  color:#0000FF;
+    width: 100%;
+  background-color: #d8cfb1; 
 }
 #content h3 {
     background: -moz-linear-gradient(#ffffff, #F6F6F6); /* FF 3.6+ */ 
@@ -67,7 +52,7 @@ html, body, form, fieldset, legend, h1, ul {
     background: -o-linear-gradient(#ffffff, #F6F6F6); /* Opera 11.10 */ 
 
     background: linear-gradient(#ffffff,#BF8E7E); /* the standard */
-    border-bottom: 1px solid #595959; /*#E0E0E0;*/
+    border-bottom: 1px solid #595959; 
     color: #000;#3C3C3C;
     font-size: 12px;
     font-weight: bold;
@@ -278,4 +263,31 @@ input[type=submit]:active, input[type=button]:active {
 
 .placeholder {
     color: #999;
+}
+.txtinput{ 
+  font-family: Helvetica, Arial, sans-serif;
+  border-style: solid;
+  border-radius: 4px;
+  border-width: 4px;
+  border-color: #896640;
+  font-size: 14px;
+  padding-left: 40px;
+  width: 13%;
+  color: #777;
+  cursor:pointer;
+  line-height: 0.3em;
+}
+
+.promo:hover{
+  background:#006666;
+  box-shadow: 0px 4px #663333;
+  color: black;
+}
+.active:active {
+    background:#e5f2e4;
+    color:#0D0A08;
+    font-size:26px;
+    cursor:pointer;
+    outline:none;
+    box-shadow: inset 5px 5px 5px #660000;
 }
