@@ -1,0 +1,96 @@
+body{
+  background-color: #D2E1E6;;
+}
+  .button {
+    background-color: #4A1A59;
+    border-radius: 15px;
+    color: white;
+    padding: 10px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    width: 7%;
+   -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: solid 6px;
+    border-color: #5C9D9D #003636 #003636 #5C9D9D;
+}
+
+.button:active{
+  
+}
+button.button{
+    width:13%
+}
+.button:active{
+    -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    background: #E32935;
+    border: solid 1px #203E5F;
+}
+.button-sm {
+    float:left;
+    width: 5%;
+    height: 20px;
+    border-radius: 15px;
+    font-size: 14px;
+    padding: 10px 27px;
+    border: solid 6px;
+    border-color: #5C9D9D #003636 #003636 #5C9D9D;
+
+}
+.button:hover{
+    background-color: #C390D4;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button-sm:hover{
+    background-color: #C390D4; /*   Green */
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}  
+.button-md {
+    float:left;
+    background-color: #4A1A59;
+    width: 7%;
+    height: 20px;
+    border-radius: 15px;
+    font-size: 14px;
+    padding: 10px 27px;
+    border: solid 6px;
+    border-color: #5C9D9D #003636 #003636 #5C9D9D;
+}  
+.button-md:hover{
+    background-color: #C390D4; 
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 
+    rgba(0,0,0,0.19);               
+}
+.button-lg {
+    float:left;
+    background-color: #4A1A59;
+    width: 10%;
+    height: 20px;
+    border-radius: 15px;
+    font-size: 14px;
+    padding: 10px 27px;
+    border: solid 6px;
+    border-color: #5C9D9D #003636 #003636 #5C9D9D;
+}
+.button-lg:hover{
+    background-color: #C390D4; 
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 
+    rgba(0,0,0,0.19);               
+}
+h3 {
+    color: #9E5C46;
+    padding-bottom: 3px;
+    border-bottom: solid 5px;
+    font-style:oblique;
+    font-size:24px;
+} 
