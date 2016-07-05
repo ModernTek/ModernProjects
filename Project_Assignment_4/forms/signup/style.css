@@ -1,0 +1,166 @@
+/* Sign Up Form */
+html{
+  margin: 0px;
+  padding: 0px;
+  background: #000000;
+}
+@font-face{
+  font-family: 'Conv_azoft-sans-bold-italic';
+  src: url('fonts/azoft-sans-bold-italic.eot');
+  src: url('fonts/azoft-sans-bold-italic.woff') format('woff'), 
+  url('fonts/azoft-sans-bold-italic.ttf') format('truetype'), url('fonts/azoft-sans-bold-italic.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+body{
+  font-size:12px;
+  height: 100%;
+  width: 38%;
+  padding: 20px;
+  margin: 10px auto;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #000000;
+  background:rgba(191,142,126,1);
+  
+/*background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(212,228,239,1)), color-stop(100%, rgba(134,174,204,1)));*/
+
+background: linear-gradient(to bottom,
+  rgba(191, 142, 126,1) 0%, 
+  rgba(194, 114, 87,1) 100%);
+}
+  
+#signup_form .fieldset_border{
+  border-color:#990099;
+  border-style: solid;
+  border-radius: 8px;
+  border-with:6px;
+}
+  
+#signup_form .txtinput{
+font-family:arial;
+	font-family:SansationLight;
+	font-size:11pt;
+	font-weight:bold;
+	background-color:336699;
+  border-style: solid;
+  border-radius: 4px;
+  border-width: 2px;
+  border-color: #3F251D;
+	color:gray;
+ height:20px ;
+-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+  padding-left: 40px;
+  width: 40%;
+  color: #777;
+  cursor:pointer;
+}
+ 
+#signup_form .name{
+  background: #fff no-repeat;
+}
+ 
+#signup_form  label{
+  font-weight:bold;
+  font-size:17px;
+}
+ 
+#signup_form .legend{
+  font-size: 18px;
+  font-family: 'Conv_azoft-sans-bold-italic',Helvetica, Arial, sans-serif;
+}
+ 
+#signup_form .heading{
+  font-size: 20px;
+  font-family: 'Conv_azoft-sans-bold-italic',Helvetica, Arial, sans-serif;
+}
+ 
+#signup_form .txtinput.textbox{
+  width:89%;
+}
+ 
+#signup_form .address_img{
+  background: #fff  no-repeat;
+  background-position-y: -5px;
+}
+ 
+#signup_form .txtinput.select{
+  width:49%;
+  color:#777777;
+   height:25px ;
+radius: 20px;-moz-border-radius: 10px;
+	-webkit-border-
+  -moz-border-radius: 20px;
+	-webkit-border-
+}
+ 
+#signup_form .div_outer_dob{
+  width:100%;
+}
+ 
+#signup_form .dateinput{
+  width:79%;
+  background: #fff no-repeat;
+  background-position-x: 1px;
+  background-size: 29px 29px;
+}
+ 
+#signup_form .home_tel{
+  background: #fff no-repeat;
+  background-position-x: 1px;
+  background-size: 29px 29px;
+}
+ 
+#signup_form .work_tel{
+  background: #fff no-repeat;
+  background-size: 27px 25px;
+}
+ 
+#signup_form .email{
+  background: #fff no-repeat;
+  width:44%;
+}
+ 
+#signup_form .div_dob{
+  width:50%;
+  float:left;
+}
+ 
+#signup_form .gender{
+  padding-left: 3px;
+  width:49%;
+  float:left;
+}
+ 
+#signup_form .gender span{
+  font-size:18px;
+}
+ 
+#signup_form .div_outer_address{
+  clear:both;
+}
+ 
+legend {
+    display: block; font-weight: bold; font-size: 1.5em;
+    width: 30%; padding-bottom: 10px;
+    text-shadow: 1px 1px 0px #990099;
+}
+ 
+#signup_form .submit{
+  text-align:center;
+}
+ 
+#signup_form .submit_btn{
+  color:#ffffff;
+  cursor:pointer;
+  border-radius:5px;
+  width: 20%;
+  height: 100%;
+  font-size: 21px;
+  height:100%;
+  box-shadow: 5px 5px 10px 5px #888888;
+  background: rgb(149,149,149);
+
+ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(149,149,149,1)), color-stop(46%,rgba(13,13,13,1)), color-stop(50%,rgba(1,1,1,1)), color-stop(53%,rgba(10,10,10,1)), color-stop(76%,rgba(78,78,78,1)), color-stop(87%,rgba(56,56,56,1)), color-stop(100%,rgba(27,27,27,1)));
+

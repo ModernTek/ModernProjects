@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>BillingShipping</title>
+            
+        <link rel="stylesheet" href="style.css"> 
+    
+  </head>
+
+  <body>
+
+    <form id="shipping_billing_form">
+  <div>
+  <label for="heading" class="heading">Shipping Billing  Form</label>
+  </div>  
+  <fieldset class="fieldset_border">
+    <legend class="legend">Shipping Address</legend>
+    <div>
+      <label for="name">Name</label><br>
+      <input  type="text" class="name txtinput" name="name" placeholder="First" autofocus></br>
+      <input  type="text" class="name txtinput" name="name" placeholder="Last">
+    </div><br>
+    <div class="div_outer_address" >
+      <label for="address">Address</label><br>
+      <input type="text" class="txtinput textbox address_img" placeholder="Street Address"><br>
+      <input type="text" class="txtinput textbox address_img" placeholder="Address Line 2"><br>
+      <input type="text" class="txtinput  address_img" placeholder="City">
+      <input type="text" class="txtinput  address_img" placeholder="State/Province"><br>
+      <input type="text" class="txtinput  address_img" placeholder="Zip Code">
+      <select class="txtinput select address_img" >
+        <option value="Country" class="select"  >Select Country</option>
+        <option value="United States" class="select"  >United States</option>
+      </select>
+    </div><br>
+    <div>
+      <label for="contact">Phone Number</label><br>
+      <input type="tel" class="txtinput  home_tel" placeholder="Home">
+      <input type="tel" class="txtinput  work_tel" placeholder="Work">
+    </div><br>
+    <div>
+      <label for="email">Email Address</label><br>
+      <input type="email" class="txtinput  email" placeholder="email@example.com">
+    </div>
+    </fieldset>
+    
+<fieldset class="fieldset_border">
+    <legend class="legend">Billing Address</legend>
+    <div>
+      <label for="name">Name</label><br>
+      <input  type="text" class="name txtinput" name="name" placeholder="First" autofocus></br>
+      <input  type="text" class="name txtinput" name="name" placeholder="Last">
+    </div><br>
+    <div class="div_outer_address" >
+      <label for="address">Address</label><br>
+      <input type="text" class="txtinput textbox address_img" placeholder="Street Address"><br>
+      <input type="text" class="txtinput textbox address_img" placeholder="Address Line 2"><br>
+      <input type="text" class="txtinput  address_img" placeholder="City">
+      <input type="text" class="txtinput  address_img" placeholder="State/Province"><br>
+      <input type="text" class="txtinput  address_img" placeholder="Zip Code">
+      <select class="txtinput select address_img" >
+        <option value="Country" class="select"  >Select Country</option>
+        <option value="United States" class="select"  >United States</option>
+      </select>
+    </div><br>
+    <div>
+      <label for="contact">Phone Number</label><br>
+      <input type="tel" class="txtinput  home_tel" placeholder="Home">
+      <input type="tel" class="txtinput  work_tel" placeholder="Work">
+    </div><br>
+    <div>
+      <label for="email">Email Address</label><br>
+      <input type="email" class="txtinput  email" placeholder="email@example.com">
+    </div>
+    </fieldset>
+    <br>
+  <div class="check">
+   <input type="checkbox"  class="checkbox_btn" value="checkbox">
+    <p>Shipping should match billing form's input data </p>
+   
+  </div>
+</form>
+    
+    
+    
+    
+    
+  </body>
+</html>
