@@ -54,6 +54,11 @@ background: linear-gradient(to bottom,
     width: 100%; padding-bottom: 10px;
     text-shadow: 1px 1px 0px #fff;
 }
+#credit_debit_form .link{
+  font-size: 18px;
+  font-family: 'Conv_azoft-sans-bold-italic',Helvetica, Arial, sans-serif;
+  color:#0000FF;
+}
 input:not([type=submit]), select {
     border: 1px solid #999;
     padding: 2px;

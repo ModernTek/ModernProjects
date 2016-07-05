@@ -49,6 +49,11 @@ background: linear-gradient(to bottom,
     width: 30%; padding-bottom: 10px;
     text-shadow: 1px 1px 0px #fff;
 }
+#colorBuild_form .link{
+  font-size: 18px;
+  font-family: 'Conv_azoft-sans-bold-italic',Helvetica, Arial, sans-serif;
+  color:#0000FF;
+}
 #colorBuild_form .heading{
   font-size: 18px;
   font-family: 'Conv_azoft-sans-bold-italic',Helvetica, Arial, sans-serif;

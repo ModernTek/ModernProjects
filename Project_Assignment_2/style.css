@@ -18,7 +18,11 @@ body{
     border: solid 6px;
     border-color: #5C9D9D #003636 #003636 #5C9D9D;
 }
-
+.link{
+  font-size: 18px;
+  font-family: 'Conv_azoft-sans-bold-italic',Helvetica, Arial, sans-serif;
+  color:#0000FF;
+}
 .button:active{
   
 }

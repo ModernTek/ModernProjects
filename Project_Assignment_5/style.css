@@ -15,7 +15,11 @@ button {
     border:0;
     color:#fff;
 }
-
+.link{
+  font-size: 18px;
+  font-family: 'Conv_azoft-sans-bold-italic',Helvetica, Arial, sans-serif;
+  color:#FFF;
+}
 #result {
     display:block;
     font-family: sans-serif;

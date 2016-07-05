@@ -37,6 +37,11 @@ body{
   border-radius: 8px;
   border-with:6px;
 }
+#schedule_appt .link{
+  font-size: 18px;
+  font-family: 'Conv_azoft-sans-bold-italic',Helvetica, Arial, sans-serif;
+  color:#0000FF;
+}
 .placeholder {
     color: #999;
 }

@@ -23,8 +23,6 @@ body{
   color: #000000;
   background:rgba(191,142,126,1);
   
-/*background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(212,228,239,1)), color-stop(100%, rgba(134,174,204,1)));*/
-
 background: linear-gradient(to bottom,
   rgba(191, 142, 126,1) 0%, 
   rgba(194, 114, 87,1) 100%);
@@ -36,7 +34,6 @@ background: linear-gradient(to bottom,
   border-radius: 8px;
   border-with:6px;
 }
-  
 #signup_form .txtinput{
 font-family:arial;
 	font-family:SansationLight;
@@ -69,6 +66,11 @@ font-family:arial;
 #signup_form .legend{
   font-size: 18px;
   font-family: 'Conv_azoft-sans-bold-italic',Helvetica, Arial, sans-serif;
+}
+#signup_form .link{
+  font-size: 18px;
+  font-family: 'Conv_azoft-sans-bold-italic',Helvetica, Arial, sans-serif;
+  color:#0000FF;
 }
  
 #signup_form .heading{

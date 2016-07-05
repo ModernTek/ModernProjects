@@ -54,6 +54,11 @@ html, body, form, fieldset, legend, h1, ul {
     margin: 0 2%;
     width: 100%; /*63%*/
 }
+#content .link{
+  font-size: 18px;
+  font-family: 'Conv_azoft-sans-bold-italic',Helvetica, Arial, sans-serif;
+  color:#0000FF;
+}
 #content h3 {
     background: -moz-linear-gradient(#ffffff, #F6F6F6); /* FF 3.6+ */ 
     background: -ms-linear-gradient(#ffffff, #F6F6F6); /* IE10 */ 

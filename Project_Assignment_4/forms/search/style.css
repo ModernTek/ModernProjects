@@ -35,11 +35,11 @@ background: linear-gradient(to bottom,
 	height: 25px;
 }
 
-background: linear-gradient(to bottom,
-  rgba(191, 142, 126,1) 0%, 
-  rgba(194, 114, 87,1) 100%);
-}
-  
+#search_form .link{
+  font-size: 18px;
+  font-family: 'Conv_azoft-sans-bold-italic',Helvetica, Arial, sans-serif;
+  color:#0000FF;
+}  
 #search_form .fieldset_border{
   border-color:#b2B2B2;
   border-style: solid;
