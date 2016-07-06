@@ -291,3 +291,8 @@ input[type=submit]:active, input[type=button]:active {
     outline:none;
     box-shadow: inset 5px 5px 5px #660000;
 }
+.link{
+  margin-left: 22px;
+  font-size: 18px;
+  font-family: 'Conv_azoft-sans-bold-italic',Helvetica, Arial, sans-serif;
+}
