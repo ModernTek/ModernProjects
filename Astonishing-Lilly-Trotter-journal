@@ -1,0 +1,31 @@
+#Astonishing-Lily-Trotter
+
+Our team consists of two people: myself and Eric Fuller. We were given an assignment to develop *UI design for Blog.Modern Developer*.
+
+We have communicated with Eric over google email.
+It is happen that Eric Fuller is very expirienced CSS3 developer. On the other side, I am real newcomer to this area.
+The fact that Eric Fuller is experienced CSS3 developer was very useful for the result of project, and also served me as a good learning experience.
+Eric Fuller created github repository for the project and has divided development of UI into six parts.
+I have developed the following three parts:
+
+* Header
+* [Content](https://github.com/efuller/md-blog-single/issues/2)
+* [Side bar](https://github.com/efuller/md-blog-single/issues/3)
+
+All other parts was developer by Eric.
+Originally we have developed each part and commited to github as separate feature/branches: header, content, sidebar were developed by me; comments, related, footer were develop by Eric.
+Later on, Eric merged all parts into develop branch and feature branches have been removed.
+
+In general, Eric was very helpful to me. I guess that Eric is very busy, and I have to wait sometimes for week until he anwered my questions.
+ 
+I still have number of questions unanswered and I hope that Eric will find time to answer them.
+
+At the very end Eric merged all together in the master branch and beatifully edited my work. 
+
+In a process of development, Eric provided very valuable advice to me; I did learn quite a bit from him.
+
+I wish our communication with Eric was more interactive, not only emails. I thought that we can meet over google hangout to discuss the stuff, but this never happened. Eric also promised that we merged branches together, and this also never happen.
+
+In the whole, it was really fasinating experience for me, and let me understand, how much I still have to learn.
+
+For me this project was very challenging, and Eric contibution really makes it look so good.  
