@@ -1,7 +1,7 @@
 
 //Create JavaScript Validation Functions.
 
-//(function(window){
+(function(window){
 
 
   var validator = {};
@@ -570,4 +570,4 @@ validator.isTrimmed = function(input) {
    return countws === 0 ? true : false;
  }
 
-//})(window);
+})(window);
