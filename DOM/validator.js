@@ -8,15 +8,15 @@
 
   validator.isEmailAddress = function(input) {
 
-    /* Checks if the input parameter is an email address,
-     * consisting of three parts; An email address consists
-     * of two strings combined by an @ symbol.
-     */
-    
-      input = input || '';
-      var atIndex = input.indexOf('@');
-      return atIndex > 0 && atIndex < input.length - 1 && 
-             atIndex === input.lastIndexOf('@');
+  	/* Checks if the input parameter is an email address,
+  	 * consisting of three parts; An email address consists
+  	 * of two strings combined by an @ symbol.
+  	 */
+  	
+ 	    input = input || '';
+ 	    var atIndex = input.indexOf('@');
+ 	    return atIndex > 0 && atIndex < input.length - 1 && 
+ 	           atIndex === input.lastIndexOf('@');
 
    }
 /*****************************************************************/ 
@@ -24,10 +24,10 @@
  validator.isPhoneNumber = function(input){
 
      /* Checks if the input parameter is a valid phone number
-      * for your country.
-      */
+ 	    * for your country.
+ 	    */
 
-      /* Assuming that format written this way  1-NPA-NXX-XXXX which includes
+ 	    /* Assuming that format written this way  1-NPA-NXX-XXXX which includes
        1 for long distance call. */
       var parts = input.split('-');     
      
@@ -73,12 +73,12 @@
      * a-z, A-Z, or 0-9. Ignore white space.
      */ 
 
-      var alphaNum = 
-      'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-      var nosymbols = "";
+	    var alphaNum = 
+	    'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+	    var nosymbols = "";
       for (var i = 0; i < input.length - 1; i++){
           if (alphaNum.indexOf(input.charAt(i)) !== -1 ||
-              input.charAt(i) === " ")
+    	        input.charAt(i) === " ")
               nosymbols += input.charAt(i);
       }
       return nosymbols;
@@ -105,13 +105,13 @@ validator.isBeforeDate = function(input, reference){
    * are not found, it should throw a new error.
    */
      if (isNaN(Date.parse(input)) || isNaN(Date.parse(reference))){
-       console.log("Input parameter or reference parameter is not a Date");
-      return false;
-     }
-     var firstDate = new Date(input);
-     var secondDate = new Date(reference);
-     return firstDate.getTime() < secondDate.getTime();
-  
+	     console.log("Input parameter or reference parameter is not a Date");
+	    return false;
+	   }
+	   var firstDate = new Date(input);
+	   var secondDate = new Date(reference);
+	   return firstDate.getTime() < secondDate.getTime();
+	
  }
 
 /**************************************************************************/
@@ -124,8 +124,8 @@ validator.isAfterDate = function(input, reference) {
    * if two are not found, it should throw a new error.
    */
       if (isNaN(Date.parse(input)) || isNaN(Date.parse(reference))){
-          console.log("Input parameter or reference parameter is not a Date");
-          return false;
+	        console.log("Input parameter or reference parameter is not a Date");
+	        return false;
       }
       var firstDate = new Date(input);
       var secondDate = new Date(reference);
@@ -145,7 +145,7 @@ validator.isBeforeToday = function (input, reference) {
 
    if (isNaN(Date.parse(input))){
 
-   console.log("Input parameter is not a Date");
+	 console.log("Input parameter is not a Date");
      return false;
    }
    var today = new Date().getTime();
@@ -165,24 +165,24 @@ validator.isAfterToday = function (input, reference) {
 
    if (isNaN(Date.parse(input))){
 
-   console.log("Input parameter is not a Date");
-   return false;
-  }
-  var today = new Date().getTime();
-  var inputDate = new Date(input).getTime();
-  
-  return today < inputDate;
+	 console.log("Input parameter is not a Date");
+	 return false;
+	}
+	var today = new Date().getTime();
+	var inputDate = new Date(input).getTime();
+	
+	return today < inputDate;
 } 
 /*****************************************************************************/
 
 validator.isEmpty = function (input) {
 
-  /* Checks the input parameter and returns true if it is an empty
-   * string -a string with no length or characters that is
-   * represented as "" or only contaons whitespace(s).
-   */
+	/* Checks the input parameter and returns true if it is an empty
+	 * string -a string with no length or characters that is
+	 * represented as "" or only contaons whitespace(s).
+	 */
 
-   return (input === null || input.trim().length === 0);
+	 return (input === null || input.trim().length === 0);
 
 }
 
@@ -190,14 +190,14 @@ validator.isEmpty = function (input) {
 
 validator.contains = function (input, words) {
 
-  /* Checks if the input text parameter contains one or more of the
-   * words within the words array. A word is defined as the following:
-   * having undefined, whitespace, or punctuation before and after it.
-   * The function should be case-insensitive.
-   */
+	/* Checks if the input text parameter contains one or more of the
+	 * words within the words array. A word is defined as the following:
+	 * having undefined, whitespace, or punctuation before and after it.
+	 * The function should be case-insensitive.
+	 */
 
-   var nosymbols = validator.withoutSymbols(input);
-   nosymbols = nosymbols.toLowerCase();
+	 var nosymbols = validator.withoutSymbols(input);
+	 nosymbols = nosymbols.toLowerCase();
      for (var i = 0; i < words.length; i++){
          var ind = nosymbols.indexOf(words[i]);
          if  (nosymbols.indexOf(words[i]) !== -1 &&
@@ -217,16 +217,16 @@ validator.contains = function (input, words) {
 
 validator.lacks = function(input, words) {
 
-  /* Checks if the input yexy parameter does not contain any of the words
-   * wirhin the words array. Use the "word" definition used in the
-   * above .contains descrition. The function should be case-insensituve.
-   * A function like this could be used for checking blacklisted words.
-   */
+	/* Checks if the input yexy parameter does not contain any of the words
+	 * wirhin the words array. Use the "word" definition used in the
+	 * above .contains descrition. The function should be case-insensituve.
+	 * A function like this could be used for checking blacklisted words.
+	 */
 
    var nosymbols = validator.withoutSymbols(input);
-   nosymbols = nosymbols.toLowerCase();
+	 nosymbols = nosymbols.toLowerCase();
 
-   for (var i = 0; i < words.length; i++){
+	 for (var i = 0; i < words.length; i++){
         var ind = nosymbols.indexOf(words[i]);
         if (nosymbols.indexOf(words[i]) !== -1 &&
            (nosymbols.charAt(ind-1) === " "     &&
@@ -244,11 +244,11 @@ validator.lacks = function(input, words) {
 
 validator.isComposedOf = function (input, strings){
 
-  /* Checks that the input text parameter contains only strings 
-   * found wirhin the strings array. Note that this function 
-   * doesn't use a strong word definition the way .contains and
-   * .lacks does. The function should be case-insensitive.
-   */
+	/* Checks that the input text parameter contains only strings 
+	 * found wirhin the strings array. Note that this function 
+	 * doesn't use a strong word definition the way .contains and
+	 * .lacks does. The function should be case-insensitive.
+	 */
 
     var l = strings.length;
     var longest;
@@ -290,11 +290,11 @@ validator.isComposedOf = function (input, strings){
 
 validator.isLength = function (input, n){
 
-  /* Checks if the input parameter's character count is less than
-   * or equal to the n parameter.
-   */
+	/* Checks if the input parameter's character count is less than
+	 * or equal to the n parameter.
+	 */
 
-   return input.length <= n ? true:false;
+	 return input.length <= n ? true:false;
 
 }
 
@@ -302,39 +302,39 @@ validator.isLength = function (input, n){
 
 validator.isOfLength = function (input, n) {
 
-  /* Checks if the parameter's character count is greater than or equal 
-   * to the n parameter.
-   */
+	/* Checks if the parameter's character count is greater than or equal 
+	 * to the n parameter.
+	 */
 
-   return input.length >= n ? true:false;
+	 return input.length >= n ? true:false;
 
 }
 
 /******************************************************************************/
 
 validator.countWords = function (input) {
-  
-  /* Check the number of words in the input parameter.
-   * Refer to the definition of word used in the description 
-   * of the .contains function.
-   */
+	
+	/* Check the number of words in the input parameter.
+	 * Refer to the definition of word used in the description 
+	 * of the .contains function.
+	 */
 
-  var alphaNum = 
-     'ABCDEFGHJIKLMNOPQRSTUVWXYZabcdefghjiklmnopqrstuvwxyz0123456789';
-  
-  var word = "", pos = 0, wordCount = 0;
-  
-  for (var i = 0; i < input.length; i++){
-    
-    if (alphaNum.indexOf(input.charAt(i)) === -1 ||
-        input.charAt(i) === " ") {
-            word = input.substr(pos, i);        
-        pos = i + 1;
-        
-        if (word.length > 0) wordCount++;
+	var alphaNum = 
+	   'ABCDEFGHJIKLMNOPQRSTUVWXYZabcdefghjiklmnopqrstuvwxyz0123456789';
+	
+	var word = "", pos = 0, wordCount = 0;
+	
+	for (var i = 0; i < input.length; i++){
+		
+		if (alphaNum.indexOf(input.charAt(i)) === -1 ||
+		    input.charAt(i) === " ") {
+			      word = input.substr(pos, i);		    
+		    pos = i + 1;
+		    
+		    if (word.length > 0) wordCount++;
 
-    }
-  }   
+		}
+	}   
 
 return wordCount;
 }
@@ -342,12 +342,12 @@ return wordCount;
 /******************************************************************************/
 
 validator.lessWordsThan = function (input, n){
-  
-  /* Checks if the input parameter has a word count less than or
-   * equal to the n parameter.
-   */
+	
+	/* Checks if the input parameter has a word count less than or
+	 * equal to the n parameter.
+	 */
 
-   return validator.countWords(input) <= n ? true : false; 
+	 return validator.countWords(input) <= n ? true : false; 
 
 }
 
@@ -355,11 +355,11 @@ validator.lessWordsThan = function (input, n){
 
 validator.moreWordsThan = function (input, n) {
 
-  /* Checks if the input parameter has a word count greater 
-   * than or equal to the n parameter.
-   */
+	/* Checks if the input parameter has a word count greater 
+	 * than or equal to the n parameter.
+	 */
 
-   return validator.countWords(input) >= ? true : false;
+	 return validator.countWords(input) >= ? true : false;
 
 }  
 
@@ -367,7 +367,7 @@ validator.moreWordsThan = function (input, n) {
 
 validator.isBetween = function (input, floor, ceil) {
 
-  /* Checks that the input parameter matches all of the following:
+	/* Checks that the input parameter matches all of the following:
      *
      *   - input is greater than or equal to the floor parameter
      *   - input is less than or equal to the cell parameter.
@@ -376,50 +376,50 @@ validator.isBetween = function (input, floor, ceil) {
 
      if (isNaN(input)){
 
-      console.log("input is not numeric");
-        return false;
-   }
-   return (input >= floor) && (input <= ceil) ? true : false;
+	 	  console.log("input is not numeric");
+	      return false;
+	 }
+	 return (input >= floor) && (input <= ceil) ? true : false;
 }
 
 /******************************************************************************/
 
 validator.isAlphanumeric = function (input) {
 
-  /* Checks that the input parameter string is only composed of the
-   * following characters: a-z, A-Z, or 0-9. Unicode characters are 
-   * intetionally disgarded.
-   */
+	/* Checks that the input parameter string is only composed of the
+	 * following characters: a-z, A-Z, or 0-9. Unicode characters are 
+	 * intetionally disgarded.
+	 */
 
-   var code, i;
+	 var code, i;
 
-   for  (i = 0; i < input.length; i++){
+	 for  (i = 0; i < input.length; i++){
 
-     code = input.charCodeAt(i);
+		 code = input.charCodeAt(i);
 
-     if (!(code > 47 && code < 58)  &&   // numeric (0-9)
-       !(code > 64 && code < 91)  &&  // upper alpha (A-Z)
-       !(code > 96 && code < 123)) { // lower alpha (a-z)
-      
-      return false; 
+		 if (!(code > 47 && code < 58)  &&   // numeric (0-9)
+			 !(code > 64 && code < 91)  &&  // upper alpha (A-Z)
+			 !(code > 96 && code < 123)) { // lower alpha (a-z)
+			
+			return false; 
 
-    }
-  }
-  return true;
+		}
+	}
+	return true;
 }
 
 /******************************************************************************/
 
 validator.isCreditCard = function (input) {
 
-  /* Checks if the input parameter is a credit actd or bank card
-   * number. A credit card number will bedefineed as four sets of
-   * four alphanumeric characters separated by hyphens (-), or
-   * a sungle string of alhanumeric characters (without hyphens).
-   */
+	/* Checks if the input parameter is a credit actd or bank card
+	 * number. A credit card number will bedefineed as four sets of
+	 * four alphanumeric characters separated by hyphens (-), or
+	 * a sungle string of alhanumeric characters (without hyphens).
+	 */
 
-  var alphaNum = 
-  'ABCDEFGHJIKLMNOPQRSTUVWXYZabcdefghjiklmnopqrstuvwxyz0123456789';
+	var alphaNum = 
+	'ABCDEFGHJIKLMNOPQRSTUVWXYZabcdefghjiklmnopqrstuvwxyz0123456789';
     
     var checkString="";
 
@@ -428,29 +428,29 @@ validator.isCreditCard = function (input) {
     //Check whether input has dashes
     if (parts.length === 1){
 
-      //No dashes check length of the string
-      if (input.length !== 16) return false;
-        
-      
+    	//No dashes check length of the string
+    	if (input.length !== 16) return false;
+    	  
+    	
     } else{
           if (parts.length === 4){
 
-         //We have dashes on input.
-         //Check length of each part
+    	   //We have dashes on input.
+    	   //Check length of each part
 
-             for (var k = 0; k < parts.length; k++){
+    	       for (var k = 0; k < parts.length; k++){
 
-               if (parts[k].length !== 4) return false;
-             }
-         }    
+    		       if (parts[k].length !== 4) return false;
+    	       }
+    	   }    
      }
      checkString = parts.join("");
      
      for (var m = 0; m < checkString.length; m++){
-       if (aplhaNum.indexOf(checkString.charAt(m)) === -1) return false;
-          
+    	 if (aplhaNum.indexOf(checkString.charAt(m)) === -1) return false;
+    			
      }
-          
+    	    
     return true;
 }
 
