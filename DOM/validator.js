@@ -569,5 +569,5 @@ validator.isTrimmed = function(input) {
    }
    return countws === 0 ? true : false;
  }
-
+  return validator;
 })(window);
