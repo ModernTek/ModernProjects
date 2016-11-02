@@ -359,7 +359,7 @@ validator.moreWordsThan = function (input, n) {
 	 * than or equal to the n parameter.
 	 */
 
-	 return validator.countWords >= ? true : false;
+	 return validator.countWords(input) >= ? true : false;
 
 }  
 
@@ -484,7 +484,7 @@ validator.isHex = function (input) {
 
 /******************************************************************************/
 
-vaidator.isRBG = function (input) {
+vaidator.isRGB = function (input) {
 
   /* Checks if the input is an RGB color, such as rgb(200, 26, 131).
    * An RGB color consists of:
