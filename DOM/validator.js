@@ -359,7 +359,7 @@ validator.moreWordsThan = function (input, n) {
    * than or equal to the n parameter.
    */
 
-   return validator.countWords >= ? true : false;
+   return validator.countWords(input) >= ? true : false;
 
 }  
 
