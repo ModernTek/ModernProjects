@@ -1,7 +1,7 @@
 
 //Create JavaScript Validation Functions.
 
-(function(window){
+var validator = (function(window){
 
 
   var validator = {};
@@ -359,7 +359,7 @@ validator.moreWordsThan = function (input, n) {
 	 * than or equal to the n parameter.
 	 */
 
-	 return validator.countWords(input) >= ? true : false;
+	 return validator.countWords(input) >= n ? true : false;
 
 }  
 
