@@ -135,7 +135,7 @@ validator.isAfterDate = function(input, reference) {
 
 /***************************************************************************/
 
-validator.isBeforeToday = function (input, reference) {
+validator.isBeforeToday = function (input) {
   
   /* Checks if the input parameter is a date that comes after 
    * today. The input can be either a string or a Dtae Onject. This
@@ -155,7 +155,7 @@ validator.isBeforeToday = function (input, reference) {
 
 /***************************************************************************/
 
-validator.isAfterToday = function (input, reference) {
+validator.isAfterToday = function (input) {
   
   /* Checks if the input parameter is date that comes after today
    * The input can be either s string or a Date Object. This
