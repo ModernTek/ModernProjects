@@ -1,48 +1,27 @@
 <!DOCTYPE html>
-<html >
+<html>
   <head>
     <meta charset="UTF-8">
     <title>searchForm</title>
-        <link rel="stylesheet" href="style.css">    
+      <link rel="stylesheet" href="style.css">    
   </head>
 
   <body>
-
-         <form id="search_form">
-   <a class="link" href="../index.html">Home</a><br>
-    <fieldset class="fieldset_border">
-       <legend class="legend">Search Form</legend> 
-      <div class="searchStyle">
-         <form method="get" action="http://www.google.com/search">
-         <input type="text" class="txtinput" name="search" size="15" maxlength="255 "
-         value="" placeholder="Search"/>
-         <input type="submit" class="submit_btn" value="GO"/>
-         
-        </div><br>        
-           <div class="div_continents" >
-           <select class="txtinput">  
-        <option value="Country" class="select"  >Select Continent</option>
-        <option value="America"
-        class="select"  >America </option>
-        <option value="Europe"
-                class="select" >Europe</option>
-             <option value="Asia" class="select">Asia</option>
-             <option value="Australia" class="select">Australia</option>
-             <option value="Antarctica" class="select">Antarctica</option>
-             <option value="Africa" class="select"<Africa</option>
-      </select>
-    </div><br>
-   <div class="submit">
-    <input type="submit" class="submit_btn" value="Submit">
-  </div>
-  <form>
-
-         </form>
- </header>
-    
-    
-    
-    
-    
+    <form id="search_form">
+      <a class="link" href="../index.html">Home</a><br>
+      <form id="search_form">
+      <fieldset class="fieldset_border">
+        <legend class="legend">Search Form</legend> 
+          <div class="searchStyle">
+            <input type="text" class="txtinput" name="search" id="search" 
+                   required  maxlength="255" placeholder="Search">
+          </div><br>        
+          <div class="submit">
+            <input type="submit" class="submit_btn" value="Submit">
+          </div>
+      </fieldset>
+    </form>
   </body>
 </html>
+
+ 
