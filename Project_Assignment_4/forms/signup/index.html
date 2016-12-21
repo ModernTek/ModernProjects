@@ -2,68 +2,61 @@
 <html >
   <head>
     <meta charset="UTF-8">
-    <title>signup</title>
-            
-        <link rel="stylesheet" href="style.css">    
-    
+    <title>signup</title>          
+    <link rel="stylesheet" href="style.css">       
   </head>
-
   <body>
-
     <form id="signup_form">
-    <a  class="link" href="../index.html">Home</a><br>
-  <label for="heading" class="heading">Sign Up  Form</label>
-  <fieldset class="fieldset_border">
-    <legend class="legend">Personal Information</legend>
-    <div>
-      <label for="name">Name</label><br>
-      <input  type="text" class="name txtinput" name="name" placeholder="First" autofocus></br>
-      <input  type="text" class="name txtinput" name="name" placeholder="Last">
-    </div><br>
-    <div class="div_outer_dob">
-      <div class="div_dob">
-        <label for="dob">Date of Birth</label><br>
-        <input type="date" value="date of birth" class="txtinput dateinput">
+      <a  class="link" href="../index.html">Home</a><br>
+      <label for="heading" class="heading">Sign Up  Form</label>
+      <fieldset class="fieldset_border">
+      <legend class="legend">Personal Information</legend>
+      <div>
+        <label for="name">Name</label><br>
+        <input  type="text" required class="name txtinput" name="name" id="first" placeholder="First"><br>
+        <input  type="text" class="name txtinput" name="name" id="last" placeholder="Last" required>
+      </div><br>
+      <div class="div_outer_dob">
+        <div class="div_dob">
+          <label for="dob">Date of Birth</label><br>
+          <input type="date"  name ="dob" id="dob" value="date of birth" class="txtinput dateinput" required>
+        </div>
+        <div class="gender">
+          <label for="gender">Gender</label><br>
+          <input type="radio" name="gender" id="gender" required><label>Male</label>
+          <input type="radio" name="gender" id="gender" required><label>Female</label>
+        </div>
       </div>
-      <div class="gender">
-        <label for="gender">Gender</label><br>
-        <input type="radio" name="gender"><label>Male</label>
-        <input type="radio" name="gender"><label>Female</label>
+      <div class="div_outer_address" >
+        <label for="address">Address</label><br>
+        <input type="text" class="txtinput textbox address_img" placeholder="Street Address" id="street" required><br>
+        <input type="text" class="txtinput textbox address_img" placeholder="Address Line 2"><br>
+        <input type="text" class="txtinput  address_img" placeholder="City" id="city" required>
+        <input type="text" class="txtinput  address_img" placeholder="State/Province"  maxlength="2" id="state" required><br>
+        <input type="text" class="txtinput  address_img" placeholder="Zip Code" maxlength = "5" id="zip_code" required>
+        <select class="txtinput select address_img" >
+          <option value="Country" class="select">Select Country</option>
+          <option value="United States" class="select"  >United States</option>
+        </select>
+      </div><br>
+      <div>
+        <label for="contact">Phone Number</label><br>
+        <input type="tel" class="txtinput  home_tel" placeholder="Home" id="home_tel" required>
+        <input type="tel" class="txtinput  work_tel" placeholder="Work" id="work_tel" required>
+      </div><br>
+      <div>
+        <label for="email">Email Address</label><br>
+        <input type="email" class="txtinput  email" placeholder="email@example.com" id="email" required>
       </div>
-    </div>
- 
-    <div class="div_outer_address" >
-      <label for="address">Address</label><br>
-      <input type="text" class="txtinput textbox address_img" placeholder="Street Address"><br>
-      <input type="text" class="txtinput textbox address_img" placeholder="Address Line 2"><br>
-      <input type="text" class="txtinput  address_img" placeholder="City">
-      <input type="text" class="txtinput  address_img" placeholder="State/Province"><br>
-      <input type="text" class="txtinput  address_img" placeholder="Zip Code">
-      <select class="txtinput select address_img" >
-        <option value="Country" class="select"  >Select Country</option>
-        <option value="United States" class="select"  >United States</option>
-      </select>
-    </div><br>
-    <div>
-      <label for="contact">Phone Number</label><br>
-      <input type="tel" class="txtinput  home_tel" placeholder="Home">
-      <input type="tel" class="txtinput  work_tel" placeholder="Work">
-    </div><br>
-    <div>
-      <label for="email">Email Address</label><br>
-      <input type="email" class="txtinput  email" placeholder="email@example.com">
-    </div>
     </fieldset>
     <br>
  
-  <div class="submit">
-    <input type="submit" class="submit_btn" value="Submit">
-  </div>
-</form>
-    
-    
-    
-    
-    
-  </body>
-</html>
+    <div class="submit">
+      <input type="submit" id="submit_btn"
+            value="Submit">
+    </div>
+  </form>
+     <script type="text/javascript" src="signup.js"></script>
+</body>
+</html>  
+  
