@@ -3,50 +3,49 @@
   <head>
     <meta charset="UTF-8">
     <title>CreditCard</title>
-        <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="style.css">
   </head>
-
   <body>
-
     <form id="credit_debit_form">
-    <a class="link" href="../index.html">Home</a><br>
-<fieldset class=fieldset_border>
-  <legend>Credit/Debit Card Form</legend>
-  <ul>
-    <li>
-      <label class="required">
-        <div>Name on Card</div>
-          <input name="card_name" required>
-      </label>
-    </li>
-    <li>
-      <label class="required">
-        <div>Credit Card No</div>
-        <input name="card_number" pattern="[0,9]{13,16}"
-               maxlength="16" reqquired title="13-16 digits no space"
-      </label>
-   </li> 
-   <li>
-     <label class="required">
-       <div>Expiry Date</div>
-       <input type="month" name="card_expiry" maxlength="7"
-              placeholder="yyyy-mm" required value="2016-07"
-     </label>
-   </li>
-   <li>  
-     <label class="required">
-       <div>CVV2 No.</div>
-       <input name="card_cvv" class="cvv" maxLength="3"
-              pattern="[0,9] {3}" required title="exactly 3 digits">
-       <span>Three digit code at the back on the back of the card</span>
-     </label>
-    </li>
-  </ul> 
-  </form>
-    
-    
-    
-    
-    
+      <fieldset class=fieldset_border>
+      <legend>Credit/Debit Card Form</legend>
+      <ul>
+        <li>
+          <label class="required">
+            <div>Name on Card</div>
+            <input name="card_name" id="card_name" required> 
+          </label>
+        </li>
+        <li>
+          <label class="required">
+            <div>Credit Card No</div>
+            <input name="card_number" id="card_number" maxlength="19" required>
+          </label>
+        </li>
+        <li>
+          <label class="required">
+            <div>Expiry Date</div>
+            <input type="month" name="card_expiry"
+                   id="card_expiry" maxlength="7"
+                   placeholder="yyyy-mm" required>
+          </label>
+        </li>
+        <li>  
+          <label class="required">
+            <div>CVV2 No.</div>
+            <input name="card_cvv" class="cvv" id="cvv"
+                   maxLength="3" required>
+            <span id="what-is-csv">?</span>
+            <span class="tooltip">CSV code is the security code located on the back of your card.</span> 
+          </label>
+        </li>
+      </ul>
+    </fieldset>
+    <div>
+      <input type="submit" class="submit_btn" value="Submit">
+    </div>
+  </form>              
+  <script type="text/javascript" src="CreditDebitCard.js"></script>
+  <script type="text/javascript" src="validate.js"></script>
   </body>
-</html>
+</html>  
