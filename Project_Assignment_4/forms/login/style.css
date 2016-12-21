@@ -1,4 +1,4 @@
-/* Sign Up Form */
+/* Login Page Form */
 html{
   margin: 0px;
   padding: 0px;
@@ -16,7 +16,7 @@ html{
 body{
   font-size:12px;
   height: 100%;
-  width: 40%;
+  width: 32%;
   padding: 20px;
   margin: 10px auto;
   font-family: Helvetica, Arial, sans-serif;
@@ -32,12 +32,7 @@ background: linear-gradient(to bottom,
   border-color: #660033; 
   border-style: solid;
   border-radius: 8px;
-  border-with:6px;
-}
-#login_page .link{
-  font-size: 18px;
-  font-family: 'Conv_azoft-sans-bold-italic',Helvetica, Arial, sans-serif;
-  color:#0000FF;
+  border-width:2px;
 }
 input[type=submit] {
     border: 1px solid #423021;
@@ -67,40 +62,54 @@ ul {
 }
 
 li {
-    display: block; width: 380px; float: left;
+  display: block; 
+  width: 380px; 
+  float: left;
 }
 
 li div {
-    width: 130px; float: left; margin-top: 5px;
-    color: #444; font-size: 1em; font-weight: 300;
+  width: 130px; 
+  float: left; 
+  margin-top: 5px;
+  color: #444; 
+  font-size: 1em; 
+  font-weight: 300;
 }
 
 li label.required div {
-    font-weight: bold; 
+  font-weight: bold; 
 }
 
 li label span {
-    font-size: 11px; font-weight: 300; color: #333;
+  font-size: 11px; 
+  font-weight: 300; 
+  color: #333;
 }
 
 li input, li select {
-    width: 200px; margin-bottom: 5px;
-    font-size: 0.9em;
+  width: 200px; 
+  margin-bottom: 5px;
+  font-size: 0.9em;
 }
 .placeholder {
-    color: #999;
+   color: #999;
 }
 legend {
-    display: block; font-weight: bold; font-size: 1.5em;
-    width: 30%; padding-bottom: 10px;
-    text-shadow: 1px 1px 0px #990099;
+  display: block; 
+  font-weight: bold; 
+  font-size: 1.5em;
+  width: 30%; 
+  padding-bottom: 10px;
+  text-shadow: 1px 1px 0px #990099;
 }
 input:not([type=submit]), select {
-    border: 1px solid #999;
+  border: 1px solid #999;
 }
 #login_page .submit_btn{
   color:#ffffff;
   cursor:pointer;
+  margin-top: 10px;
+  padding-top: 5px;
   border-radius:5px;
   width: 16%;
   height: 100%;
@@ -114,4 +123,15 @@ input:not([type=submit]), select {
   background: -o-linear-gradient(top,  rgba(149,149,149,1) 0%,rgba(13,13,13,1) 46%,rgba(1,1,1,1) 50%,rgba(10,10,10,1) 53%,rgba(78,78,78,1) 76%,rgba(56,56,56,1) 87%,rgba(27,27,27,1) 100%); 
   background: -ms-linear-gradient(top,  rgba(149,149,149,1) 0%,rgba(13,13,13,1) 46%,rgba(1,1,1,1) 50%,rgba(10,10,10,1) 53%,rgba(78,78,78,1) 76%,rgba(56,56,56,1) 87%,rgba(27,27,27,1) 100%); 
   background: linear-gradient(to bottom,  rgba(149,149,149,1) 0%,rgba(13,13,13,1) 46%,rgba(1,1,1,1) 50%,rgba(10,10,10,1) 53%,rgba(78,78,78,1) 76%,rgba(56,56,56,1) 87%,rgba(27,27,27,1) 100%); 
+} 
+input:required:invalid, input:focus:invalid {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAeVJREFUeNqkU01oE1EQ/mazSTdRmqSxLVSJVKU9RYoHD8WfHr16kh5EFA8eSy6hXrwUPBSKZ6E9V1CU4tGf0DZWDEQrGkhprRDbCvlpavan3ezu+LLSUnADLZnHwHvzmJlvvpkhZkY7IqFNaTuAfPhhP/8Uo87SGSaDsP27hgYM/lUpy6lHdqsAtM+BPfvqKp3ufYKwcgmWCug6oKmrrG3PoaqngWjdd/922hOBs5C/jJA6x7AiUt8VYVUAVQXXShfIqCYRMZO8/N1N+B8H1sOUwivpSUSVCJ2MAjtVwBAIdv+AQkHQqbOgc+fBvorjyQENDcch16/BtkQdAlC4E6jrYHGgGU18Io3gmhzJuwub6/fQJYNi/YBpCifhbDaAPXFvCBVxXbvfbNGFeN8DkjogWAd8DljV3KRutcEAeHMN/HXZ4p9bhncJHCyhNx52R0Kv/XNuQvYBnM+CP7xddXL5KaJw0TMAF8qjnMvegeK/SLHubhpKDKIrJDlvXoMX3y9xcSMZyBQ+tpyk5hzsa2Ns7LGdfWdbL6fZvHn92d7dgROH/730YBLtiZmEdGPkFnhX4kxmjVe2xgPfCtrRd6GHRtEh9zsL8xVe+pwSzj+OtwvletZZ/wLeKD71L+ZeHHWZ/gowABkp7AwwnEjFAAAAAElFTkSuQmCC);
+  background-position: right top;
+  background-repeat: no-repeat;
+  -moz-box-shadow: none;
+}
+input:required:valid {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAepJREFUeNrEk79PFEEUx9/uDDd7v/AAQQnEQokmJCRGwc7/QeM/YGVxsZJQYI/EhCChICYmUJigNBSGzobQaI5SaYRw6imne0d2D/bYmZ3dGd+YQKEHYiyc5GUyb3Y+77vfeWNpreFfhvXfAWAAJtbKi7dff1rWK9vPHx3mThP2Iaipk5EzTg8Qmru38H7izmkFHAF4WH1R52654PR0Oamzj2dKxYt/Bbg1OPZuY3d9aU82VGem/5LtnJscLxWzfzRxaWNqWJP0XUadIbSzu5DuvUJpzq7sfYBKsP1GJeLB+PWpt8cCXm4+2+zLXx4guKiLXWA2Nc5ChOuacMEPv20FkT+dIawyenVi5VcAbcigWzXLeNiDRCdwId0LFm5IUMBIBgrp8wOEsFlfeCGm23/zoBZWn9a4C314A1nCoM1OAVccuGyCkPs/P+pIdVIOkG9pIh6YlyqCrwhRKD3GygK9PUBImIQQxRi4b2O+JcCLg8+e8NZiLVEygwCrWpYF0jQJziYU/ho2TUuCPTn8hHcQNuZy1/94sAMOzQHDeqaij7Cd8Dt8CatGhX3iWxgtFW/m29pnUjR7TSQcRCIAVW1FSr6KAVYdi+5Pj8yunviYHq7f72po3Y9dbi7CxzDO1+duzCXH9cEPAQYAhJELY/AqBtwAAAAASUVORK5CYII=);
+  background-position: right top;
+  background-repeat: no-repeat;
 }
